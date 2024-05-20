@@ -1,0 +1,48 @@
+.ProjectCard {
+    width: 373px;
+    height: 231px;
+
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+
+    a{
+        display: none;
+    }
+
+    &:hover {
+        transition: .5s ease;
+
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
+
+        width: 380px;
+        z-index: 1;
+        img{
+            width: 100%;
+            border-left: 2px solid var(--orange);
+        }
+        a {
+            display: inline;
+            position: relative;
+            bottom: 50px;
+            left: 10px;
+
+            background: var(--orange);
+            padding: 10px;
+            border-radius: 10px;
+            transition: .5s ease;
+
+            font-family: var(--font);
+            font-size: .75rem;
+            font-weight: 500;
+            color: var(--white);
+            transition: .5s ease;
+
+            &:hover{
+                background: var(--white);
+                color: var(--orange);
+                transition: .5s ease;
+            }
+        }
+    }
+}

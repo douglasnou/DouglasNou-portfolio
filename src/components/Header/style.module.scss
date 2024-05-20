@@ -1,0 +1,105 @@
+.HeaderSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    .HeaderContainer {
+        background: var(--orange);
+        max-width: 1117px;
+        width: 50%;
+        height: 68px;
+
+        transition: .5s ease;
+
+        ul {
+            display: none;
+        }
+
+        position: relative;
+        top: 20px;
+
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 0 80px;
+        border-radius: 44px;
+
+        &:hover {
+            width: 1117px;
+            height: 68px;
+
+            padding: 0 141px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            transition: .5s ease;
+
+            .HeaderList {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                width: 40%;
+
+                li {
+                    transition: 1s ease;
+
+                    &:hover {
+                        border-bottom: 2px solid white;
+                        box-sizing: border-box;
+                        transition: 1s ease;
+                    }
+                }
+            }
+
+            .Profile {
+                width: 20%;
+                gap: 10px;
+
+                justify-content: space-between;
+            }
+        }
+
+        .Profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            width: 100%;
+            gap: 10px;
+        }
+
+
+    }
+
+    img {
+        width: 47px;
+        height: 47px;
+        border-radius: 80px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .HeaderSection{
+        
+        .HeaderContainer {
+            padding: 0 20px;
+            justify-content: space-between;
+    
+            &:hover {
+                padding: 0 20px;
+                justify-content: space-between;
+            }
+        }
+    }
+}

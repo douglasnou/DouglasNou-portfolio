@@ -1,0 +1,18 @@
+:root{
+    --font: "Poppins", sans-serif;
+
+    --orange: #FF4200;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #8B8787;
+}
+
+body{
+    background: var(--black);
+    color: var(--white);
+}
+
+.dark{
+    background: white;
+    color: black;
+}
